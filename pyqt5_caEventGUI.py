@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '.\pyqt5_caEventGUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_caEventGUI(object):
+    def setupUi(self, caEventGUI):
+        caEventGUI.setObjectName("caEventGUI")
+        caEventGUI.resize(741, 336)
+        self.buttonBox = QtWidgets.QDialogButtonBox(caEventGUI)
+        self.buttonBox.setGeometry(QtCore.QRect(620, 280, 101, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.buttonBox.setFont(font)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Close)
+        self.buttonBox.setObjectName("buttonBox")
+        self.myTextInput = QtWidgets.QLineEdit(caEventGUI)
+        self.myTextInput.setGeometry(QtCore.QRect(150, 150, 101, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.myTextInput.setFont(font)
+        self.myTextInput.setObjectName("myTextInput")
+        self.listWidget = QtWidgets.QListWidget(caEventGUI)
+        self.listWidget.setGeometry(QtCore.QRect(100, 100, 511, 41))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.listWidget.setFont(font)
+        self.listWidget.setObjectName("listWidget")
+        self.browseButton = QtWidgets.QPushButton(caEventGUI)
+        self.browseButton.setGeometry(QtCore.QRect(620, 100, 101, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.browseButton.setFont(font)
+        self.browseButton.setObjectName("browseButton")
+        self.label = QtWidgets.QLabel(caEventGUI)
+        self.label.setGeometry(QtCore.QRect(20, 110, 81, 16))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(caEventGUI)
+        self.label_2.setGeometry(QtCore.QRect(20, 150, 131, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(caEventGUI)
+        self.label_3.setGeometry(QtCore.QRect(190, 10, 371, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.runButton = QtWidgets.QPushButton(caEventGUI)
+        self.runButton.setGeometry(QtCore.QRect(290, 270, 111, 41))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.runButton.setFont(font)
+        self.runButton.setObjectName("runButton")
+        self.label_4 = QtWidgets.QLabel(caEventGUI)
+        self.label_4.setGeometry(QtCore.QRect(20, 200, 71, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.listWidget_2 = QtWidgets.QListWidget(caEventGUI)
+        self.listWidget_2.setGeometry(QtCore.QRect(100, 200, 511, 41))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.listWidget_2.setFont(font)
+        self.listWidget_2.setObjectName("listWidget_2")
+        self.browseButton_2 = QtWidgets.QPushButton(caEventGUI)
+        self.browseButton_2.setGeometry(QtCore.QRect(620, 200, 101, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.browseButton_2.setFont(font)
+        self.browseButton_2.setObjectName("browseButton_2")
+
+        self.retranslateUi(caEventGUI)
+        self.buttonBox.accepted.connect(caEventGUI.accept)
+        self.buttonBox.rejected.connect(caEventGUI.reject)
+        QtCore.QMetaObject.connectSlotsByName(caEventGUI)
+
+    def retranslateUi(self, caEventGUI):
+        _translate = QtCore.QCoreApplication.translate
+        caEventGUI.setWindowTitle(_translate("caEventGUI", "Ca2+ Video Analyzer"))
+        self.browseButton.setText(_translate("caEventGUI", "Browse"))
+        self.label.setText(_translate("caEventGUI", "Video File:"))
+        self.label_2.setText(_translate("caEventGUI", "Frame Rate (fps):"))
+        self.label_3.setText(_translate("caEventGUI", "Intracellular Calcium Analyzer"))
+        self.runButton.setText(_translate("caEventGUI", "RUN"))
+        self.label_4.setText(_translate("caEventGUI", "Mask File:"))
+        self.browseButton_2.setText(_translate("caEventGUI", "Browse"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    caEventGUI = QtWidgets.QDialog()
+    ui = Ui_caEventGUI()
+    ui.setupUi(caEventGUI)
+    caEventGUI.show()
+    sys.exit(app.exec_())
+
